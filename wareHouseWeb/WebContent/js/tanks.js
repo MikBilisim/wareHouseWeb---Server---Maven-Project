@@ -116,6 +116,7 @@ function addition(clicked_id){
 	var amount = parseInt(document.getElementById("label"+clicked_id).textContent);
 	//alert(nameF);sum
 	var sum = parseInt(document.getElementById("sum"+clicked_id).value);
+	if(sum){
 	var amountnew = parseInt(amount+sum);
 	
 	var message = wareHouseWebService.updateService({dbName:dbName , id:clicked_id,amount:amountnew });
@@ -123,6 +124,9 @@ function addition(clicked_id){
 	document.getElementById("message").innerHTML = "<h2>" + message + "</h2>";
 	
 	LoadJson();
+	}else{
+		alert("empty amount");
+	}
 	
 }
 
@@ -132,11 +136,16 @@ function subtraction(clicked_id){
 	var sum = parseInt(document.getElementById("sum"+clicked_id).value);
 	var amountnew = parseInt(amount-sum);
 	
+	if(sum && amountnew >= 0){
+	
 	var message = wareHouseWebService.updateService({dbName:dbName , id:clicked_id,amount:amountnew });
 	
 	document.getElementById("message").innerHTML = "<h2>" + message + "</h2>";
 	
 	LoadJson();
+	} else {
+		alert("empty or insufficient amount");
+	}
 }
 
 	

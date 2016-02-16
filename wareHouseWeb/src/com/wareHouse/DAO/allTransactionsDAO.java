@@ -115,7 +115,7 @@ public class allTransactionsDAO {
 	
 	public boolean deleteTransaction(int id) {
 		connectionDB();
-
+		
 		boolean status = false;
 		String result = "";	
 		

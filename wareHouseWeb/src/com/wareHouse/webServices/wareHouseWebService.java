@@ -92,7 +92,7 @@ public class wareHouseWebService {
 	@POST
 	@Path("/updateProduct")
 	public Response updateService(@QueryParam ("dbName") String dbName,@QueryParam ("id") int id ,@QueryParam ("amount") int amount) {
-		
+	
 		
 		wareHouseTransactionsDAO dao = new wareHouseTransactionsDAO(dbName);
 		
@@ -106,11 +106,11 @@ public class wareHouseWebService {
 		
 		boolean status = dao.updateProdcut(id, amount);
 		
-		if(status == false)
+		if(status == true)
 			return Response.ok().entity("update successfully").build();	
 		else
-			return Response.ok().entity("update unsuccessfully").build();	
-
+			return Response.ok().entity("update unsuccessfully").build();
+	
 	}  	
 
 }

@@ -123,14 +123,14 @@ public class wareHouseTransactionsDAO {
 				System.out.println("HATA: "+e);
 				}	
 				
-				System.out.println(msg);
+				
 			
 				return queryRes;	
 			}
 
 	public boolean deleteProduct(int id) {
 		connectionDB();
-
+		
 		boolean status = false;
 		String result = "";	
 		
