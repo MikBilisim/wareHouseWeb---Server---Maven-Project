@@ -138,18 +138,17 @@
 			<div class="left_box">
 			<h2>Welcome To Our Example Website</h2>
 			<p></p>
-			<h4>Как да инсталирате базата данни?</h4>
+			<h4>Как да инсталирате база данни?</h4>
 			<p><ul>
 					<li class="sub">Отворете MySQL WorkBench</li>
 					<li class="sub">Създайте New Connection - name:root, password:root</li>
-					<li class="sub">влезте от него</li>
-					<li class="sub">пускайте <a href="./dbQuery.sql">dbQuery.sql</a></li>
-					<li class="sub">базата данни е готова вече може да използвате сайта</li>			
+					<li class="sub">влезте в него</li>
+					<li class="sub">за да създадете таблиците, пуснете <a href="./dbQuery.sql">dbQuery.sql</a></li>
+					<li class="sub">базата данни е вече готова и сайтът може да се използва</li>			
 	        </ul></p>
-			    <p>Базата данни не е инсталирана и сървър ако не работи същото време мобилно приложение няма да работи.<br />
-			     Мобилно приложение чете данните от база данни чрез сайта.Сайт работи с Java EE & JavaScript.Управляваме
-			     базата данни чрез Java CRUD Operations.Сайта се държа оделен обект За Мобилно Приложение и
-			     работи с RestFul Web Services <br />
+			    <p>Ако базата данни не е инсталирана и сървърът не работи,мобилното приложение също няма да работи.<br /></p>
+			   <p> То чете данните от база данни чрез сайта, който работи с Java EE & JavaScript.</p>
+			    <p>Управлението на база данни става чрез Java CRUD Operations.Сайтът съдържа отделни сервизи за мобилно приложение,които са направени от RestFul Web Services</p>
                 <br />
 				<div class="left_box">
 			<h4><a href="#">Задача</a></h4>
